@@ -1,0 +1,57 @@
+id
+title			text 		标题
+date 			date 		日期
+organization	keyword		机构
+content			text		内容
+involvedStocks	nested		相关股票。股票ID，股票名称，股票代码
+author          keyword     分析师
+rating          keyword     研报类型
+
+PUT /report
+{
+  "mappings": {
+    "report":{
+      "properties": {
+        "title":{
+          "type": "text",
+          "analyzer": "ik_max_word"
+        },
+        "date": {
+          "type": "date",
+          "format": "yyyy-MM-dd HH:mm:ss || yyyy-MM-dd || epoch_millis"
+        },
+        "organization":{
+          "type": "keyword"
+        },
+        "author":{
+          "type": "keyword"
+        },
+        "rating":{
+          "type": "keyword"
+        },
+        "involvedStocks": {
+          "type": "nested",
+          "properties": {
+            "id": {
+              "type": "long"
+            },
+            "code": {
+              "type": "keyword"
+            },
+            "name": {
+              "type": "keyword"
+            }
+          }
+        },
+        "content":{
+          "type": "text",
+          "analyzer": "ik_max_word"
+        },
+	    "shortContent": {
+          "index": false,
+          "type": "text"
+        }
+      }
+    }
+  }
+}

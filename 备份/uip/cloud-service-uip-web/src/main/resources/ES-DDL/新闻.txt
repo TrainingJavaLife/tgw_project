@@ -1,0 +1,50 @@
+id
+title			text 		标题
+date 			date 		日期
+organization	keyword		机构
+content			text		内容
+involvedStocks	nested		相关股票。股票ID，股票名称，股票代码
+
+
+PUT /news
+{
+  "mappings": {
+    "news": {
+      "properties": {
+        "content": {
+          "type": "text",
+          "analyzer": "ik_smart"
+        },
+        "shortContent": {
+          "index": false,
+          "type": "text"
+        },
+        "date": {
+          "type": "date",
+          "format": "yyyy-MM-dd HH:mm:ss || yyyy-MM-dd || epoch_millis"
+        },
+        "involvedStocks": {
+          "type": "nested",
+          "properties": {
+            "code": {
+              "type": "keyword"
+            },
+            "id": {
+              "type": "long"
+            },
+            "name": {
+              "type": "keyword"
+            }
+          }
+        },
+        "organization": {
+          "type": "keyword"
+        },
+        "title": {
+          "type": "text",
+          "analyzer": "ik_smart"
+        }
+      }
+    }
+  }
+}

@@ -1,0 +1,20 @@
+{
+  "query": {
+	"has_parent": {
+	  "parent_type": "stock",
+	  "query": {
+		"ids": {
+		  "values": ["%s"]
+		}
+	  }
+	}
+  },
+  "sort": [
+	{
+	  "endDate": {
+		"order": "desc"
+	  }
+	}
+  ],
+  "size": %s
+}

@@ -1,0 +1,76 @@
+{
+  "query": {
+    "bool": {
+      "must": {
+        "bool":{
+          "should":[
+              {
+                "match": {
+                  "content": {
+                    "query": "@W",
+                    "cutoff_frequency":0.01
+                  }
+                }
+              },
+              {
+                "match": {
+                  "title": {
+                    "query": "@W",
+                    "cutoff_frequency":0.01
+                  }
+                }
+              }
+          ]
+        }
+      },
+      "should": {
+        "bool":{
+          "should":[
+              {
+                "match_phrase": {
+                  "content": {
+                    "query": "@W",
+                    "slop":50
+                  }
+                }
+              },
+              {
+                "match_phrase": {
+                  "content": {
+                    "query": "@W",
+                    "slop":50
+                  }
+                }
+              }
+            ]
+        }
+      },
+      "filter": {
+        "range": {
+          "date": {
+            "gte": "%s",
+            "lte": "%s"
+          }
+        }
+      }
+    }
+  },
+  "highlight": {
+    "fields": {
+      "title": {},
+      "content": {
+        "fragment_size" : 50,
+        "number_of_fragments": 3
+      }
+    }
+  },
+  "from": %s,
+  "size": %s,
+  "sort": [
+    {
+      "%s": {
+        "order": "desc"
+      }
+    }
+  ]
+}

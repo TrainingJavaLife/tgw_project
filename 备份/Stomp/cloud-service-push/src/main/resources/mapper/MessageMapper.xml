@@ -1,0 +1,27 @@
+<!--<?xml version="1.0" encoding="UTF-8"?>-->
+<!--<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">-->
+<!--<mapper namespace="com.tgw360.mapper.MessageMapper">-->
+
+  <!--&lt;!&ndash;资产负债表  金融&ndash;&gt;-->
+  <!--<resultMap id="MessageResult" type="com.tgw360.entity.Message">-->
+    <!--<id column="id" jdbcType="BIGINT" property="id" />-->
+    <!--<result column="send_id" property="sendId" />-->
+    <!--<result column="to_user_id"  property="toUserId" />-->
+    <!--<result column="message_type" property="type"/>-->
+    <!--<result column="message_content" property="content"/>-->
+    <!--<result column="send_time" property="date"/>-->
+    <!--<result column="is_read" property="isRead"/>-->
+  <!--</resultMap>-->
+
+  <!--<select id="findMessageByUser" resultMap="MessageResult">-->
+    <!--SELECT * FROM message WHERE to_user_id = #{userId} and message_type = #{messageType}-->
+  <!--</select>-->
+
+  <!--<insert id="addMessage">-->
+    <!--INSERT INTO message(send_id,to_user_id,message_type,message_content,send_time) VALUES (#{sendId},#{toUserId},#{msgType},#{content},NOW())-->
+  <!--</insert>-->
+
+  <!--<update id="updateMessageById">-->
+    <!--UPDATE message SET is_read = 1 WHERE id = #{msgId} AND to_user_id = #{userId}-->
+  <!--</update>-->
+<!--</mapper>-->

@@ -1,0 +1,16 @@
+,
+        {
+          "constant_score": {
+            "query": {
+              "has_child": {
+                "inner_hits":{},
+                "type": "finance",
+                "query": {
+                  "terms": {
+                    "endDate": [%s]
+                  }
+                }
+              }
+            }
+          }
+        }

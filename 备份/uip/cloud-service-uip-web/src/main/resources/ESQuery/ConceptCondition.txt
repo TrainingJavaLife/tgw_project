@@ -1,0 +1,21 @@
+
+        {
+            "constant_score": {
+              "filter": {
+                "bool": {
+                  "should": [
+                    {
+                      "term": {
+                        "concepts": "%s"
+                      }
+                    },
+                    {
+                      "term": {
+                        "concepts": "%s概念"
+                      }
+                    }
+                  ]
+                }
+              }
+            }
+        }

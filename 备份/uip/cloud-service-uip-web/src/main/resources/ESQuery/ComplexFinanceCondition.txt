@@ -1,0 +1,49 @@
+        {
+          "constant_score": {
+            "filter": {
+              "function_score": {
+                "min_score": %s,
+                "query": {
+                  "has_child": {
+                    "type": "finance",
+                    "score_mode": "sum",
+                    "query": {
+                      "function_score": {
+                        "query": {
+                          "terms": {
+                            "endDate": [
+                              "%s",
+                              "%s"
+                            ]
+                          }
+                        },
+                        "functions": [
+                          {
+                            "filter": {
+                              "term": {
+                                "endDate": "%s"
+                              }
+                            },
+                            "script_score": {
+                              "script": "doc['%s'].value"
+                            }
+                          },
+                          {
+                            "filter": {
+                              "term": {
+                                "endDate": "%s"
+                              }
+                            },
+                            "script_score": {
+                              "script": "-doc['%s'].value * %s"
+                            }
+                          }
+                        ]
+                      }
+                    }
+                  }
+                }
+              }
+            }
+          }
+        }

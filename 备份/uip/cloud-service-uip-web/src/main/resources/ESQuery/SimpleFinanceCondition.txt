@@ -1,0 +1,27 @@
+        {
+          "constant_score": {
+            "query": {
+              "has_child": {
+                "type": "finance",
+                "query": {
+                  "bool": {
+                    "must": [
+                      {
+                        "term": {
+                          "endDate": "%s"
+                        }
+                      },
+                      {
+                        "range": {
+                          "%s": {
+                            "%s": %s
+                          }
+                        }
+                      }
+                    ]
+                  }
+                }
+              }
+            }
+          }
+        }

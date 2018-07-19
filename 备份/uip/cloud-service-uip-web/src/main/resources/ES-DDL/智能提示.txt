@@ -1,0 +1,36 @@
+id
+code			text 		股票代码
+stockName 		keyword     股票名称
+chiSpelling	    keyword		股票首字母
+stockPinyin	    text		股票拼音
+conceptName     keyword     概念名称
+conceptPinyin   keyword		概念拼音	// TODO: 改为url类型？
+
+
+PUT /intellisense
+{
+  "mappings": {
+    "intellisense":{
+      "properties": {
+        "code":{
+          "type": "keyword"
+        },
+        "stockName":{
+          "type": "keyword"
+        },
+        "chiSpelling":{
+          "type": "keyword"
+        },
+        "stockPinyin":{
+          "type": "keyword"
+        },
+        "conceptName":{
+          "type": "keyword"
+        },
+        "conceptPinyin":{
+          "type": "keyword"
+        }
+      }
+    }
+  }
+}

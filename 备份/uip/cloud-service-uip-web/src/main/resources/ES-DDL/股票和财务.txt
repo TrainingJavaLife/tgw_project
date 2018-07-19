@@ -1,0 +1,72 @@
+id
+code			keyword		股票代码
+name			keyword		股票名称
+chiSpelling		keyword		拼音简称
+industry		keyword		行业
+businessMajor	keyword		主营产品     // 改为text？或者不需要索引。只存储
+concepts		keyword		所属概念列表，只有概念名称。
+
+// TODO: 添加一个字段——所属概念个数
+
+PUT /stock
+{
+  "mappings": {
+    "stock": {
+      "properties": {
+        "code":{
+          "type": "keyword"
+        },
+        "name":{
+          "type": "keyword"
+        },
+        "chiSpelling":{
+          "type": "keyword"
+        },
+        "industry":{
+          "type": "keyword"
+        },
+        "city":{
+          "type": "keyword"
+        },
+        "businessMajor":{
+          "type": "text"
+        },
+        "concepts":{
+          "type": "keyword"
+        }
+      }
+    },
+    "finance": {
+      "_parent": {
+        "type": "stock"
+      },
+      "properties": {
+        "endDate":{
+          "type": "date",
+		      "format": "yyyy-MM-dd HH:mm:ss || yyyy-MM-dd || epoch_millis"
+        },
+        "npParentCompanyYOY":{
+          "type": "double"
+        },
+        "operatingRevenueGrowRate":{
+          "type": "double"
+        },
+        "basicEPS":{
+          "type": "double"
+        },
+        "netAssetPS":{
+          "type": "double"
+        },
+        "cashFlowPS":{
+          "type": "double"
+        },
+        "roe":{
+          "type": "double"
+        },
+        "grossIncomeRatio":{
+          "type": "double"
+        }
+      }
+    }
+  }
+}

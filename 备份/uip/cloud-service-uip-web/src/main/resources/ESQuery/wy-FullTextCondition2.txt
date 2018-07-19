@@ -1,0 +1,45 @@
+{
+  "query": {
+    "bool": {
+      "should": {
+        "match": {
+          "@T": {
+            "query": "@W",
+            "cutoff_frequency":0.01
+          }
+        }
+      },
+      "must": {
+        "match_phrase": {
+          "@T": {
+            "query": "@W",
+            "slop":50
+          }
+        }
+      },
+      "filter": {
+        "range": {
+          "date": {
+            "gte": "%s",
+            "lte": "%s"
+          }
+        }
+      }
+    }
+  },
+  "highlight": {
+    "fields": {
+      "title": {},
+      "content": {}
+    }
+  },
+  "from": %s,
+  "size": %s,
+  "sort": [
+    {
+      "%s": {
+        "order": "desc"
+      }
+    }
+  ]
+}

@@ -1,0 +1,42 @@
+server:
+  port: 8001
+spring:
+  application:
+    name: cloud-service-uip-web
+  cloud:
+    config:
+      profile: dev
+      label: uipdev
+      discovery:
+        # 默认false，设为true表示使用注册中心中的configserver配置而不自己配置configserver的uri
+        enabled: true
+        # 指定config server在服务发现中的serviceId，默认为：configserver
+        serviceId: cloud-config-server
+      username: user
+      password: 123456
+      #配置文件加载失败的快速响应
+      fail-fast: true
+    stream:
+      kafka:
+        binder:
+          replicationFactor: 3
+          zk-nodes: 172.18.44.120:2880,172.18.44.128:2880,172.18.44.123:2880
+          brokers: 172.18.44.120:9092,172.18.44.128:9092,172.18.44.123:9092
+    # 开启消息跟踪
+    bus:
+      trace:
+        enabled: true
+
+#management:
+#  security:
+#     enabled: false
+
+eureka:
+  client:
+#    healthcheck:
+#      enabled: true #开启健康检查（需要spring-boot-starter-actuator依赖）
+    serviceUrl:
+      defaultZone: http://172.18.44.120:8761/eureka/,http://172.18.44.128:8761/eureka/ # 指定注册中⼼的地址
+  instance:
+    hostname: 172.18.42.8
+    instance-id: ${spring.application.name}-${eureka.instance.hostname}:${server.port}

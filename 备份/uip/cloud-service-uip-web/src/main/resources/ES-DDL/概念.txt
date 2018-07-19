@@ -1,0 +1,23 @@
+ID
+name			keyword 	概念名称
+remark		    text 		备注（概念的解释）
+
+TODO：概念的名称要存两个字段。如    5G概念 --> 5g   剔除尾部的“概念"，再大写转小写。  O2O概念 --> o2o
+	name  name.unified
+
+PUT /concept
+{
+  "mappings": {
+    "concept":{
+      "properties": {
+        "name":{
+          "type": "keyword"
+        },
+        "remark":{
+          "type": "text",
+          "index": false
+        }
+      }
+    }
+  }
+}

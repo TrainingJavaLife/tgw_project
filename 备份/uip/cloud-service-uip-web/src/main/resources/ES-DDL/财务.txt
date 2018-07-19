@@ -1,0 +1,505 @@
+{
+  "finance": {
+    "mappings": {
+      "*": {
+        "properties": {
+          "T19900331": {
+            "type": "double"
+          },
+          "T19900630": {
+            "type": "double"
+          },
+          "T19900930": {
+            "type": "double"
+          },
+          "T19901231": {
+            "type": "double"
+          },
+          "T19910331": {
+            "type": "double"
+          },
+          "T19910630": {
+            "type": "double"
+          },
+          "T19910930": {
+            "type": "double"
+          },
+          "T19911231": {
+            "type": "double"
+          },
+          "T19920331": {
+            "type": "double"
+          },
+          "T19920630": {
+            "type": "double"
+          },
+          "T19920930": {
+            "type": "double"
+          },
+          "T19921231": {
+            "type": "double"
+          },
+          "T19930331": {
+            "type": "double"
+          },
+          "T19930630": {
+            "type": "double"
+          },
+          "T19930930": {
+            "type": "double"
+          },
+          "T19931231": {
+            "type": "double"
+          },
+          "T19940331": {
+            "type": "double"
+          },
+          "T19940630": {
+            "type": "double"
+          },
+          "T19940930": {
+            "type": "double"
+          },
+          "T19941231": {
+            "type": "double"
+          },
+          "T19950331": {
+            "type": "double"
+          },
+          "T19950630": {
+            "type": "double"
+          },
+          "T19950930": {
+            "type": "double"
+          },
+          "T19951231": {
+            "type": "double"
+          },
+          "T19960331": {
+            "type": "double"
+          },
+          "T19960630": {
+            "type": "double"
+          },
+          "T19960930": {
+            "type": "double"
+          },
+          "T19961231": {
+            "type": "double"
+          },
+          "T19970331": {
+            "type": "double"
+          },
+          "T19970630": {
+            "type": "double"
+          },
+          "T19970930": {
+            "type": "double"
+          },
+          "T19971231": {
+            "type": "double"
+          },
+          "T19980331": {
+            "type": "double"
+          },
+          "T19980630": {
+            "type": "double"
+          },
+          "T19980930": {
+            "type": "double"
+          },
+          "T19981231": {
+            "type": "double"
+          },
+          "T19990331": {
+            "type": "double"
+          },
+          "T19990630": {
+            "type": "double"
+          },
+          "T19990930": {
+            "type": "double"
+          },
+          "T19991231": {
+            "type": "double"
+          },
+          "T20000331": {
+            "type": "double"
+          },
+          "T20000630": {
+            "type": "double"
+          },
+          "T20000930": {
+            "type": "double"
+          },
+          "T20001231": {
+            "type": "double"
+          },
+          "T20010331": {
+            "type": "double"
+          },
+          "T20010630": {
+            "type": "double"
+          },
+          "T20010930": {
+            "type": "double"
+          },
+          "T20011231": {
+            "type": "double"
+          },
+          "T20020331": {
+            "type": "double"
+          },
+          "T20020630": {
+            "type": "double"
+          },
+          "T20020930": {
+            "type": "double"
+          },
+          "T20021231": {
+            "type": "double"
+          },
+          "T20030331": {
+            "type": "double"
+          },
+          "T20030630": {
+            "type": "double"
+          },
+          "T20030930": {
+            "type": "double"
+          },
+          "T20031231": {
+            "type": "double"
+          },
+          "T20040331": {
+            "type": "double"
+          },
+          "T20040630": {
+            "type": "double"
+          },
+          "T20040930": {
+            "type": "double"
+          },
+          "T20041231": {
+            "type": "double"
+          },
+          "T20050331": {
+            "type": "double"
+          },
+          "T20050630": {
+            "type": "double"
+          },
+          "T20050930": {
+            "type": "double"
+          },
+          "T20051231": {
+            "type": "double"
+          },
+          "T20060331": {
+            "type": "double"
+          },
+          "T20060630": {
+            "type": "double"
+          },
+          "T20060930": {
+            "type": "double"
+          },
+          "T20061231": {
+            "type": "double"
+          },
+          "T20070331": {
+            "type": "double"
+          },
+          "T20070630": {
+            "type": "double"
+          },
+          "T20070930": {
+            "type": "double"
+          },
+          "T20071231": {
+            "type": "double"
+          },
+          "T20080331": {
+            "type": "double"
+          },
+          "T20080630": {
+            "type": "double"
+          },
+          "T20080930": {
+            "type": "double"
+          },
+          "T20081231": {
+            "type": "double"
+          },
+          "T20090331": {
+            "type": "double"
+          },
+          "T20090630": {
+            "type": "double"
+          },
+          "T20090930": {
+            "type": "double"
+          },
+          "T20091231": {
+            "type": "double"
+          },
+          "T20100331": {
+            "type": "double"
+          },
+          "T20100630": {
+            "type": "double"
+          },
+          "T20100930": {
+            "type": "double"
+          },
+          "T20101231": {
+            "type": "double"
+          },
+          "T20110331": {
+            "type": "double"
+          },
+          "T20110630": {
+            "type": "double"
+          },
+          "T20110930": {
+            "type": "double"
+          },
+          "T20111231": {
+            "type": "double"
+          },
+          "T20120331": {
+            "type": "double"
+          },
+          "T20120630": {
+            "type": "double"
+          },
+          "T20120930": {
+            "type": "double"
+          },
+          "T20121231": {
+            "type": "double"
+          },
+          "T20130331": {
+            "type": "double"
+          },
+          "T20130630": {
+            "type": "double"
+          },
+          "T20130930": {
+            "type": "double"
+          },
+          "T20131231": {
+            "type": "double"
+          },
+          "T20140331": {
+            "type": "double"
+          },
+          "T20140630": {
+            "type": "double"
+          },
+          "T20140930": {
+            "type": "double"
+          },
+          "T20141231": {
+            "type": "double"
+          },
+          "T20150331": {
+            "type": "double"
+          },
+          "T20150630": {
+            "type": "double"
+          },
+          "T20150930": {
+            "type": "double"
+          },
+          "T20151231": {
+            "type": "double"
+          },
+          "T20160331": {
+            "type": "double"
+          },
+          "T20160630": {
+            "type": "double"
+          },
+          "T20160930": {
+            "type": "double"
+          },
+          "T20161231": {
+            "type": "double"
+          },
+          "T20170331": {
+            "type": "double"
+          },
+          "T20170630": {
+            "type": "double"
+          },
+          "T20170930": {
+            "type": "double"
+          },
+          "T20171231": {
+            "type": "double"
+          },
+          "T20180331": {
+            "type": "double"
+          },
+          "T20180630": {
+            "type": "double"
+          },
+          "T20180930": {
+            "type": "double"
+          },
+          "T20181231": {
+            "type": "double"
+          },
+          "T20190331": {
+            "type": "double"
+          },
+          "T20190630": {
+            "type": "double"
+          },
+          "T20190930": {
+            "type": "double"
+          },
+          "T20191231": {
+            "type": "double"
+          },
+          "T20200331": {
+            "type": "double"
+          },
+          "T20200630": {
+            "type": "double"
+          },
+          "T20200930": {
+            "type": "double"
+          },
+          "T20201231": {
+            "type": "double"
+          },
+          "T20210331": {
+            "type": "double"
+          },
+          "T20210630": {
+            "type": "double"
+          },
+          "T20210930": {
+            "type": "double"
+          },
+          "T20211231": {
+            "type": "double"
+          },
+          "T20220331": {
+            "type": "double"
+          },
+          "T20220630": {
+            "type": "double"
+          },
+          "T20220930": {
+            "type": "double"
+          },
+          "T20221231": {
+            "type": "double"
+          },
+          "T20230331": {
+            "type": "double"
+          },
+          "T20230630": {
+            "type": "double"
+          },
+          "T20230930": {
+            "type": "double"
+          },
+          "T20231231": {
+            "type": "double"
+          },
+          "T20240331": {
+            "type": "double"
+          },
+          "T20240630": {
+            "type": "double"
+          },
+          "T20240930": {
+            "type": "double"
+          },
+          "T20241231": {
+            "type": "double"
+          },
+          "T20250331": {
+            "type": "double"
+          },
+          "T20250630": {
+            "type": "double"
+          },
+          "T20250930": {
+            "type": "double"
+          },
+          "T20251231": {
+            "type": "double"
+          },
+          "T20260331": {
+            "type": "double"
+          },
+          "T20260630": {
+            "type": "double"
+          },
+          "T20260930": {
+            "type": "double"
+          },
+          "T20261231": {
+            "type": "double"
+          },
+          "T20270331": {
+            "type": "double"
+          },
+          "T20270630": {
+            "type": "double"
+          },
+          "T20270930": {
+            "type": "double"
+          },
+          "T20271231": {
+            "type": "double"
+          },
+          "T20280331": {
+            "type": "double"
+          },
+          "T20280630": {
+            "type": "double"
+          },
+          "T20280930": {
+            "type": "double"
+          },
+          "T20281231": {
+            "type": "double"
+          },
+          "T20290331": {
+            "type": "double"
+          },
+          "T20290630": {
+            "type": "double"
+          },
+          "T20290930": {
+            "type": "double"
+          },
+          "T20291231": {
+            "type": "double"
+          },
+          "T20300331": {
+            "type": "double"
+          },
+          "T20300630": {
+            "type": "double"
+          },
+          "T20300930": {
+            "type": "double"
+          },
+          "T20301231": {
+            "type": "double"
+          },
+          "code": {
+            "type": "keyword"
+          }
+        }
+      }
+    }
+  }
+}
